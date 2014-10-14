@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_white">
+    <!-- Navigation Bar Top -->
+	<LinearLayout android:background="@drawable/nav_bar_top_black"
+		android:layout_width="fill_parent"
+    	android:layout_height="52dp">
+		<RelativeLayout android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent">
+	    	<TextView android:id="@+id/app_about_btn_back"
+	    		android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginLeft="5dp"
+		    	android:text="@string/txt_back"
+		    	android:textStyle="bold"
+		    	android:gravity="center_vertical"
+		    	android:layout_centerVertical="true"
+		    	android:textColor="@xml/btn_back_selector"
+		    	android:background="@xml/btn_back_selector"/>
+			<TextView android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:textStyle="bold"
+	    		android:text="@string/txt_about"
+	    		android:textColor="@color/color_white"
+	    		android:layout_centerHorizontal="true"
+	    		android:layout_centerVertical="true"
+	    		android:textSize="18dp"/>
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:focusable="false" 
+			android:scrollingCache="false"
+			android:fadingEdge="none"
+			android:scrollbarThumbVertical="@drawable/scrollbar_y">
+			<TextView android:id="@+id/app_about_text_view"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+	    		android:textColor="@color/color_black"
+	    		android:textSize="14dp"
+	    		android:padding="10dp"/>
+		</ScrollView>
+	</LinearLayout>	
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/menu_id_reset"
+          android:icon="@drawable/icon_menu_reset"
+          android:title="@string/txt_reset"/>
+</menu>

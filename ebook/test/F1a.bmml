@@ -1,0 +1,105 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="471" measuredH="819" mockupW="400" mockupH="800">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="71" y="19" w="400" h="800" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="79" y="41" w="392" h="-1" measuredW="191" measuredH="36" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>28</size>
+        <text>Welcome%20back%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="__group__" x="72" y="20" w="398" h="25" measuredW="398" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>ga-navbar1</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="398" h="25" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="2">
+          <controlProperties>
+            <borderColor>3355443</borderColor>
+            <borderStyle>none</borderStyle>
+            <color>3355443</color>
+          </controlProperties>
+        </control>
+        <control controlID="10" controlTypeID="__group__" x="293" y="4" w="92" h="19" measuredW="92" measuredH="19" zOrder="1" locked="false" isInGroup="2">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="1" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="10">
+              <controlProperties>
+                <color>10470904</color>
+                <icon>WirelessIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="22" y="1" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="10">
+              <controlProperties>
+                <color>10470904</color>
+                <icon>CellBarsIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="44" y="1" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="10">
+              <controlProperties>
+                <color>10470904</color>
+                <icon>BatteryIcon%7Cxsmall</icon>
+                <rotation>90</rotation>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="62" y="0" w="30" h="-1" measuredW="27" measuredH="19" zOrder="3" locked="false" isInGroup="10">
+              <controlProperties>
+                <color>10470904</color>
+                <size>11</size>
+                <text>12%3A00</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="171" y="123" w="200" h="200" measuredW="1299" measuredH="1299" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <filter>true</filter>
+        <src>./assets/Logo-Shiny-Only.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::IconLabel" x="214" y="729" w="-1" h="-1" measuredW="115" measuredH="48" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>Welcome%26bm%3BWelcome.bmml%26bm%3BWelcome.bmml%26bm%3BWelcome.bmml</href>
+        <icon>GtIcon%7Clarge</icon>
+        <labelPosition>left</labelPosition>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22143%2C710%2C258%2C758%22%20href%3D%22Welcome.bmml%22%20alt%3D%22Welcome%22%20id%3D%225%22/%3E</map>
+        <size>24</size>
+        <text>NEXT</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::StickyNote" x="354" y="254" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>next%20becomes%20active%20when%20one%20is%20complete</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::HRule" x="96" y="566" w="350" h="-1" measuredW="100" measuredH="10" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="74" y="528" w="393" h="-1" measuredW="216" measuredH="26" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>false</bold>
+        <color>0</color>
+        <size>18</size>
+        <text>%3C%20Email%20used%20to%20register%20%3E</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="74" y="587" w="393" h="-1" measuredW="145" measuredH="26" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>false</bold>
+        <color>0</color>
+        <size>18</size>
+        <text>%3CYour%20password%3E</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::HRule" x="96" y="622" w="350" h="-1" measuredW="100" measuredH="10" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

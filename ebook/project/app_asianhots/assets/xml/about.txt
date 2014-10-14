@@ -1,0 +1,9 @@
+Ứng dụng được phát triển bởi : hoangphan
+
+Hy vọng source code này có thể giúp các anh em mới bước đầu làm quen với Android nắm bắt được các kỹ năng thiết kế về Layout với hình ảnh, thao tác lấy dữ liệu từ file XML, TXT hiển thị lên ListView và GridView.
+
+//----------------------
+Tên : bi mat
+Công ty : Niteco.se
+Add: 16th Floor - CLAND2 156 Xa Dan 2, Ha Noi, Viet Nam
+Email : hoangphantich@gmail.com

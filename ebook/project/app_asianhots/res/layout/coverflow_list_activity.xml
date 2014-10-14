@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_black"
+    android:id="@+id/cover_flow_view_image">
+    <!-- Navigation Bar Top -->
+	<LinearLayout android:background="@drawable/nav_bar_top_black"
+		android:layout_width="fill_parent"
+    	android:layout_height="52dp">
+		<RelativeLayout android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent">
+	    	<ImageButton android:id="@+id/btn_back_coverflow"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="40dp"
+	    		android:background="@xml/btn_arrow_selector"
+	    		android:layout_centerVertical="true"
+	    		android:layout_marginLeft="5dp"/>
+			<TextView android:id="@+id/txt_title_coverflow"
+				android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:textStyle="bold"
+	    		android:textColor="@color/color_white"
+	    		android:layout_centerHorizontal="true"
+	    		android:layout_centerVertical="true"
+	    		android:textSize="18dp"/>
+		</RelativeLayout>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/relative_layout_coverflow"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone">
+		<RelativeLayout android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+			<LinearLayout android:id="@+id/layout_coverflow"
+				android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:gravity="center"/>
+			<TextView android:id="@+id/txt_title_image_coverflow"
+			   	android:layout_width="fill_parent"
+			   	android:layout_height="wrap_content"
+			   	android:text="TITLE"
+			   	android:textStyle="bold"
+			   	android:textColor="@color/color_white"
+			   	android:gravity="center"
+			   	android:textSize="16dp"
+			   	android:layout_marginTop="10dp"/>
+		</RelativeLayout>	
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:padding="10dp"
+		    android:layout_alignParentBottom="true">
+		    <TextView android:id="@+id/txt_seekbar_coverflow"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="@color/color_white"
+		    	android:text="100/100"
+		    	android:textStyle="bold"
+		    	android:textSize="16dp"
+		    	android:gravity="center"
+		    	android:layout_marginBottom="3dp"/>
+			<SeekBar android:id="@+id/seekbar_coverflow"
+				android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:progressDrawable="@xml/progress_seekbar_style"
+    			android:thumb="@drawable/seekbar_thumb"/>
+		</LinearLayout> 
+	</RelativeLayout>	
+</LinearLayout>

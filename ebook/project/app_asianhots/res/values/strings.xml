@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- String -->
+    <string name="app_name">Asian Hots</string>
+    <string name="txt_albums">Albums</string>
+    <string name="txt_back">Back</string>
+    <string name="txt_reset">Reset</string>
+    <string name="txt_about">About App</string>
+    
+    <!-- Message -->
+    <string name="msg_loading">Loading...</string>
+    
+    <!-- Color -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+</resources>
