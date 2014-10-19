@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edtEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:hint="Enter to do here" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tvHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hour"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/edtHour"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="24"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tvMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="Minute"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/edtMinute"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="60"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+    </ListView>
+
+</LinearLayout>
