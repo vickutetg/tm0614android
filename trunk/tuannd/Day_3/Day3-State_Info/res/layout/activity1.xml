@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity1" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Activity 1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/id_btnActivity1_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="Click_Activity1_left"
+            android:text="Activity1(Stop)" />
+
+        <Button
+            android:id="@+id/id_btnActivity1_Right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="Click_Activity1_Right"
+            android:text="Activity1(Destroy)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/id_btnActivity2_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="Click_Activity2_left"
+            android:text="Activity2(Start)" />
+
+        <Button
+            android:id="@+id/id_btnActivity2_Right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="Click_Activity2_Right"
+            android:text="Activity2(Destroy)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/id_btnActivity3_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="Click_Activity3_left"
+            android:text="Activity3(Start)" />
+
+        <Button
+            android:id="@+id/id_btnActivity3_Right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="Click_Activity3_Right"
+            android:text="Activity3(Destroy)" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_textState"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EE0000"
+        android:padding="10dp"
+        android:textColor="#0000EE"
+        android:textSize="20dp" />
+
+</LinearLayout>
