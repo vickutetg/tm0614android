@@ -34,7 +34,7 @@
             android:name=".Scr2Activity"
             android:label="@string/title_activity_scr2" >
             <intent-filter>
-                <action android:name="com.hoangphan.Screen1" />
+                <action android:name="com.hoangphan.Screen2" />
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>        
