@@ -17,8 +17,14 @@ public final class R {
         public static final int btn_canculate=0x7f060004;
         public static final int edt_name=0x7f060001;
         public static final int edt_quantity=0x7f060003;
+        public static final int listview=0x7f060006;
+        public static final int scroll=0x7f060005;
         public static final int txt_name=0x7f060000;
         public static final int txt_quantyti=0x7f060002;
+        public static final int txt_total=0x7f060008;
+        public static final int txt_total_label=0x7f060007;
+        public static final int txt_vat=0x7f06000a;
+        public static final int txt_vat_label=0x7f060009;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
