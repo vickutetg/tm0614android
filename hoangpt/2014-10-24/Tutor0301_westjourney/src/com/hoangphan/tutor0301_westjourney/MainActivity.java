@@ -83,6 +83,12 @@ public class MainActivity extends Activity {
 		//có dự định đi
 		Intent i = new Intent("com.hoangphan.Screen1");
 		
+		//vali
+		Bundle b = new Bundle();
+		b.putString("hello", "Hello");
+		b.putInt("year", 2014);
+		i.putExtras(b);
+		
 		//đi
 		startActivity(i);
 	}
@@ -114,5 +120,10 @@ public class MainActivity extends Activity {
 		startActivityForResult(
 				new Intent(MainActivity.this, Scr1Activity.class), 
 				Constants.REQUEST_FROM_MAIN_TO1);
-	}	
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+	}
 }
