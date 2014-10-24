@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Order</string>
+    <string name="title_activity_main">Order</string>
+    <string name="title">Order</string>
+    <string name="drink">Drink</string>
+    <string name="quantity">Quantity</string>
+    <string name="sub">-</string>
+    <string name="add">+</string>
+    <string name="txt_quantity">1</string>
+    <string name="txt_vat">10%</string>
+    <string name="label_vat">VAT</string>
+    <string name="total">0</string>
+    <string name="label_total">Total</string>
+    <string name="calculate">Calculate</string>
+
+</resources>
