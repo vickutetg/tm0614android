@@ -117,13 +117,23 @@ public class MainActivity extends Activity {
 	}
 	
 	public void goScr1FromMain(View v){
+		//shortcut 
+		Intent i = new Intent(MainActivity.this, Scr1Activity.class);
+		i.putExtra("hello", "Good bye");
+		i.putExtra("year", -3);
+		
 		startActivityForResult(
-				new Intent(MainActivity.this, Scr1Activity.class), 
+				i, 
 				Constants.REQUEST_FROM_MAIN_TO1);
 	}
 
 	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		super.onActivityResult(requestCode, resultCode, data);
+	protected void onActivityResult(int requestCode, int resultCode, Intent i) {
+		//if(resultCode == Constants.RESPONSE_FROM1_TO_MAIN){
+			Bundle b = i.getExtras();
+			String name = b.getString("name");
+			int age = b.getInt("age");
+			Toast.makeText(MainActivity.this, "name:"+name+" - age:"+age, Toast.LENGTH_LONG).show();
+		//}
 	}
 }
