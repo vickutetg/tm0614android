@@ -23,7 +23,7 @@
         android:text="What your name" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/txtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" >
@@ -38,7 +38,7 @@
         android:text="What your age" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" 
