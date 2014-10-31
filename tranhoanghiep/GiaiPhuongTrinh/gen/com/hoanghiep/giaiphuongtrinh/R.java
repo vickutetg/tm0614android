@@ -5,47 +5,40 @@
  * should not be modified by hand.
  */
 
-package com.hoangphan.tutor0301_westjourney;
+package com.hoanghiep.giaiphuongtrinh;
 
 public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int blue_monitor=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int red_television=0x7f020002;
+        public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f060000;
-        public static final int btnMain=0x7f060012;
-        public static final int btnScr1=0x7f060003;
-        public static final int btnScr2=0x7f060004;
-        public static final int btnTest=0x7f060002;
-        public static final int button1=0x7f060006;
-        public static final int button2=0x7f060011;
-        public static final int imageBtns=0x7f060001;
-        public static final int progressBar1=0x7f060007;
-        public static final int ratingBar1=0x7f06000a;
-        public static final int seekBar1=0x7f060009;
-        public static final int spinner1=0x7f060008;
-        public static final int textView1=0x7f06000c;
-        public static final int textView2=0x7f06000e;
-        public static final int textView3=0x7f06000b;
-        public static final int tns=0x7f060010;
-        public static final int toggleButton1=0x7f060005;
-        public static final int txtAge=0x7f06000f;
-        public static final int txtName=0x7f06000d;
+        public static final int btnTinh=0x7f060007;
+        public static final int editA=0x7f060002;
+        public static final int editB=0x7f060004;
+        public static final int editC=0x7f060006;
+        public static final int tableRow1=0x7f060001;
+        public static final int tableRow2=0x7f060003;
+        public static final int tableRow3=0x7f060005;
+        public static final int textView1=0x7f060000;
+        public static final int txtKQ=0x7f060008;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_scr1=0x7f030001;
-        public static final int activity_scr2=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
+        public static final int btnTinh=0x7f04000a;
+        public static final int edita=0x7f040004;
+        public static final int editb=0x7f040006;
+        public static final int editc=0x7f040008;
         public static final int hello_world=0x7f040001;
-        public static final int title_activity_scr1=0x7f040002;
-        public static final int title_activity_scr2=0x7f040003;
+        public static final int txta=0x7f040003;
+        public static final int txtb=0x7f040005;
+        public static final int txtc=0x7f040007;
+        public static final int txtheader=0x7f040002;
+        public static final int txtpt=0x7f040009;
     }
     public static final class style {
         /** 
