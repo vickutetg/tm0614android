@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NhanDangBienSo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="txtHeader">Nhập vào số xe</string>
+    <string name="btnCheck">Kiểm tra</string>
+
+</resources>
