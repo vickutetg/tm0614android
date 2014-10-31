@@ -16,6 +16,7 @@ public final class R {
     public static final class id {
         public static final int LinearLayout1=0x7f060000;
         public static final int button1=0x7f060006;
+        public static final int button10=0x7f060008;
         public static final int editHour=0x7f060004;
         public static final int edtMinute=0x7f060005;
         public static final int edtWork=0x7f060002;

@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- For TextSize -->
+    <dimen name="dimen_5">10dp</dimen>
+</resources>
