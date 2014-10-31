@@ -48,7 +48,17 @@
     <ListView
         android:id="@+id/lstWork"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content" 
+        android:listSelector="#ABABAB"
+        android:divider="#E12727"
+        android:dividerHeight="2dip">
     </ListView>
+    
+      <Button
+      android:id="@+id/button10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Add work"/>
+    
 
 </LinearLayout>

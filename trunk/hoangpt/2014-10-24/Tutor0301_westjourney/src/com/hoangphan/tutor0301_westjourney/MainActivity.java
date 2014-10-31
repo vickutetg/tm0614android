@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
 		Log.d("Main", "Main onResume");
 		
 		btnTest = (ImageButton) findViewById(R.id.btnTest);
+		btnTest.setId(10000);
 		btnTest.setOnClickListener(new TestListener("hoang"));
 	}
 
