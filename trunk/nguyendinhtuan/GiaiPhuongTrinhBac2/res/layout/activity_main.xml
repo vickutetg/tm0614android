@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tuannd.giaiphuongtrinhbac2.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap gia tri cho cac he so a,b,c \ncua Phuong Trinh Bac 2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  a= " />
+
+        <EditText
+            android:id="@+id/id_edtA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="-,0,1,2,3,4,5,6,7,8,9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  b= " />
+
+        <EditText
+            android:id="@+id/id_edtB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="-,0,1,2,3,4,5,6,7,8,9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  c= " />
+
+        <EditText
+            android:id="@+id/id_edtC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="-,0,1,2,3,4,5,6,7,8,9" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickSubmit" />
+
+    <TextView
+        android:id="@+id/id_txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

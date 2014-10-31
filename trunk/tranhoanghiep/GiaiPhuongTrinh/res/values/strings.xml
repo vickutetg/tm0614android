@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GiaiPhuongTrinh</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="txtheader">Giả phương trình bậc 2</string>
+    <string name="txta">a:</string>
+    <string name="edita">a</string>
+    <string name="txtb">b:</string>
+    <string name="editb">b</string>
+    <string name="txtc">c:</string>
+    <string name="editc">c</string>
+    <string name="txtpt">PT bậc 2: ax2 + bx + c = 0</string>
+    <string name="btnTinh">Tính Nghiem</string>
+
+</resources>

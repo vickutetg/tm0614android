@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BuyFlower</string>
+    <string name="tv_hello">Ai mua hoa tôi bán hoa cho ;)</string>
+    <string name="action_settings">Menu</string>
+    <string name="hint_edFlower">enter flower name...</string>
+
+</resources>
