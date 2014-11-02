@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NangSG Tipster</string>
+    <string name="str_drink">Drink</string>
+	<string name="str_quantity">Quantity</string>
+	<string name="str_vat">VAT</string>
+	<string name="str_total">Total fee</string>
+	<string name="str_calculate">Calculate</string>
+    <string name="str_plus">+</string>                
+    <string name="str_minus">-</string>
+
+</resources>
