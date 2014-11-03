@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">[TechMater]Session04-Lab1_Login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="teststr">Forgot\n <small>password</small></string>
+    <string name="default_dialog_btn">Default Dialog</string>
+    <string name="custom_dialog_btn">Custom Dialog</string>
+
+</resources>
