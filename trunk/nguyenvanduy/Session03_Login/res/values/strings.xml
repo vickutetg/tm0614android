@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Session03_Login</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hint_email">Enter your email!</string>
+    <string name="hint_password">Enter your password!</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_forgot">Forgot Password</string>
+    
+
+</resources>
