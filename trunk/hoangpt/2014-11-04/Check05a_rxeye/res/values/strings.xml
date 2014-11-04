@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Check05a_rxeye</string>
+    <string name="new_game">New game</string>
+    <string name="setting_game">Setting</string>
+    <string name="exit_game">Exit</string>
+    <string name="title_activity_new_game">NewGameAct</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
