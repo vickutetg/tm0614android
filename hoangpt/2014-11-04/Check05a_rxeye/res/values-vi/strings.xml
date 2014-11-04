@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Check05a_rxeye</string>
+    <string name="new_game">Bắt đầu chơi</string>
+    <string name="setting_game">Tuỳ chọn</string>
+    <string name="exit_game">Thoát</string>
+</resources>

@@ -16,5 +16,7 @@ public class MainActivity extends ListActivity {
 			list.add("Hello, android "+i);
 		}
 		setListAdapter(new WorkAdapter(getBaseContext(), list));
+		
+		setContentView(R.layout.activity_main);
 	}
 }
