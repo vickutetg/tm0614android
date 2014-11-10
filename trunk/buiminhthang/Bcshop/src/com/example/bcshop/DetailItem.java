@@ -28,7 +28,7 @@ public class DetailItem extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(DetailItem.this, MainActivity.class);
-				startActivity(i);
+				startActivityForResult(i, Constants.);
 			}
 		});
 		
