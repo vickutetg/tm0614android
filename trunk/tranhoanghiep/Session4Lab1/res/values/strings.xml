@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Session4Lab1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnPass">Forgot password</string>
+
+</resources>
