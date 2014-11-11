@@ -17,6 +17,7 @@ import android.widget.GridLayout;
 public class NewGameAct extends Activity {
 	
 	int number = 0;
+	Button b1, b2;	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class NewGameAct extends Activity {
 			b.setHeight(buttonWidth);
 			b.setWidth(buttonWidth);
 			b.setId(10+i);
+			b.setBackgroundColor(Color.BLACK);
 			layout.addView(b);
 		}
 		
@@ -53,9 +55,8 @@ public class NewGameAct extends Activity {
 			@Override
 			public void run() {
 				
+				
 				runOnUiThread(new Runnable() {
-					
-					Button b1, b2;
 					
 					@Override
 					public void run() {

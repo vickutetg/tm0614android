@@ -35,7 +35,9 @@ public class MainActivity extends ListActivity {
 		menuList.add(exitStr);
 		
 		//MenuAdapter adMenu = new MenuAdapter(this);
-		ArrayAdapter<String> adMenu = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,
+		ArrayAdapter<String> adMenu = new ArrayAdapter<>(
+				this, R.layout.menu_custome,
+				R.id.title, //string need to put here
 				menuList
 				);
 		setListAdapter(adMenu);
