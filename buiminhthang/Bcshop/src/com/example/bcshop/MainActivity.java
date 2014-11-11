@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -31,8 +29,8 @@ public class MainActivity extends Activity {
 				Intent i = new Intent(MainActivity.this, DetailItem.class);
 				i.putExtra("TITLE", title[position]);
 				i.putExtra("COUNT", "1");
-
 				setResult(RESULT_OK, i);
+				startActivity(i);
 				Toast.makeText(MainActivity.this,
 						"You Clicked at " + title[+position],
 						Toast.LENGTH_SHORT).show();

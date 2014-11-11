@@ -20,20 +20,19 @@ public class DetailItem extends Activity {
 		Intent i = getIntent();
 		String title = i.getStringExtra("TITLE");
 		String count = i.getStringExtra("COUNT");
-		// TextView title_detail = (TextView) findViewById(R.id.textView1);
-		// TextView tv_count = (TextView) findViewById(R.id.tvCount);
+		String arr_title[] = { title };
+		String arr_count[] = { count };
+		CustomListDetail adapter = new CustomListDetail(DetailItem.this,
+				arr_title, arr_count);
 		Button btFlag = (Button) findViewById(R.id.btFlag);
 		btFlag.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(DetailItem.this, MainActivity.class);
-				startActivityForResult(i, Constants.REQUEST_FROM_MAIN_TO1);
+				Intent intent = new Intent(DetailItem.this, MainActivity.class);
+				startActivityForResult(intent, Constants.REQUEST_FROM_MAIN_TO1);
 			}
 		});
-		
-		// tv_count.setText(count);
-		// title_detail.setText(title);
 
 		Toast.makeText(DetailItem.this, "Detail", Toast.LENGTH_SHORT).show();
 	}
@@ -42,13 +41,14 @@ public class DetailItem extends Activity {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		Log.d(DetailItem.class + "", "aaaa");
+		Log.d(DetailItem.class + "", "onDestroy");
 
 	}
 
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		Bundle b = data.getExtras();
-	}
+	// @Override
+	// protected void onActivityResult(int requestCode, int resultCode, Intent
+	// data) {
+	// Bundle b = data.getExtras();
+	// }
 
 }
