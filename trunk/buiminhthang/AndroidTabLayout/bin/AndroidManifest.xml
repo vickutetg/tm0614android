@@ -21,6 +21,7 @@
         <activity android:name=".External" />
         <activity android:name=".Internal" />
         <activity android:name=".Callbrowser" />
+        <activity android:name=".Imageview" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
