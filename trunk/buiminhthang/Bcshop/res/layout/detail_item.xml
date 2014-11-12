@@ -6,7 +6,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/listViewDetail"
         android:layout_width="match_parent"
         android:layout_height="225dp"
         android:layout_alignParentLeft="true"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Buy continue" />
+            android:text="Buy continue" android:background="@style/button" />
 
         <Button
             android:id="@+id/btPay"

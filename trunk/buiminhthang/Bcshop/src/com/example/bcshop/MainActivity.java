@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 				Intent i = new Intent(MainActivity.this, DetailItem.class);
 				i.putExtra("TITLE", title[position]);
 				i.putExtra("COUNT", "1");
-				setResult(RESULT_OK, i);
+//				setResult(RESULT_OK, i);
 				startActivity(i);
 				Toast.makeText(MainActivity.this,
 						"You Clicked at " + title[+position],

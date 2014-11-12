@@ -11,14 +11,14 @@ import android.widget.TextView;
 
 public class CustomListDetail extends ArrayAdapter<String> {
 	private final Activity context;
-	private final String[] title;
-	private final String[] cost;
+	private final String[] title_detail;
+	private final String[] cost_detail;
 
 	public CustomListDetail(Activity context, String[] title, String[] cost) {
 		super(context, R.layout.item_detail, cost);
 		this.context = context;
-		this.title = title;
-		this.cost = cost;
+		this.title_detail = title;
+		this.cost_detail = cost;
 	}
 
 	@Override
@@ -30,9 +30,9 @@ public class CustomListDetail extends ArrayAdapter<String> {
 
 		TextView txtcost = (TextView) rowView.findViewById(R.id.cost_detail);
 
-		txtTitle.setText(title[position]);
+		txtTitle.setText(title_detail[position]);
 
-		txtcost.setText(cost[position]);
+		txtcost.setText(cost_detail[position]);
 
 		return rowView;
 	}
