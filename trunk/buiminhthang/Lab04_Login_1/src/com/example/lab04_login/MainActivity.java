@@ -14,22 +14,23 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		EditText edEmail = (EditText) findViewById(R.id.edEmail);
-		EditText edPass = (EditText) findViewById(R.id.edPass);
+		final EditText edEmail = (EditText) findViewById(R.id.edEmail);
+		final EditText edPass = (EditText) findViewById(R.id.edPass);
 
-		final String email = edEmail.getText().toString();
-		final String pass = edPass.getText().toString();
-		final String v_email = "abc@gmail.com";
-		final String v_pass = "abc";
 		TextView ocLogin = (TextView) findViewById(R.id.ocLogin);
 		ocLogin.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				if (email == v_email && pass == v_pass) {
+				String email = edEmail.getText().toString();
+				String pass = edPass.getText().toString();
+
+				if (edEmail.getText().toString().equals("abc@gmail.com")
+						&& edPass.getText().toString().equals("abc")) {
 					Toast.makeText(MainActivity.this, "Successful login",
 							Toast.LENGTH_SHORT).show();
-				} else if (email == null | pass == null) {
+				} else if (edEmail.getText().toString().equals("")
+						| edPass.getText().toString().equals("")) {
 					Toast.makeText(MainActivity.this,
 							"Please enter email and password!",
 							Toast.LENGTH_SHORT).show();
