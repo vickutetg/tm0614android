@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,8 @@ public class DetailItem extends Activity {
 		String arr_count[] = { count };
 		CustomListDetail adapter = new CustomListDetail(DetailItem.this,
 				arr_title, arr_count);
+		ListView list = (ListView) findViewById(R.id.listViewDetail);
+		list.setAdapter(adapter);
 		Button btFlag = (Button) findViewById(R.id.btFlag);
 		btFlag.setOnClickListener(new OnClickListener() {
 
