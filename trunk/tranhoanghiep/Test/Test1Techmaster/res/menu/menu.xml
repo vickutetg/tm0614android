@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/menuGroup_Main" >
+        <item
+            android:id="@+id/iconBook"
+            android:icon="@drawable/book"
+            android:showAsAction="ifRoom"
+            android:title="Book shop"/>
+        <item
+            android:id="@+id/iconProfile"
+            android:icon="@drawable/profile"
+            android:showAsAction="ifRoom"
+            android:title="Profile"/>
+    </group>
+
+</menu>
