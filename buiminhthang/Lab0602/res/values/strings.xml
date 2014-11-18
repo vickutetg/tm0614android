@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lab0602</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="weakness">Weakness</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="visual_disturbance">Visual Disturbance</string>
+    <string name="tingling_in_head">Tingling In Head</string>
+    <string name="tingling_in_neck">Tingling In Neck</string>
+    <string name="tingling_near_eye">Tingling near Eye(s)</string>
+    <string name="none">None</string>
+    <string name="add_new">Add New</string>
+
+</resources>
