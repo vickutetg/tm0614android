@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Duynv_Test01</string>
+    <string name="title_activity_main">Shop</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="description">Image</string>
+    <string name="login_hint">Your email</string>
+    <string name="login_pass">Password</string>
+    <string name="save">Save password</string>
+    <string name="btn_login">Login</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_login_success">LoginSuccessActivity</string>
+    <string name="title">Thông tin cá nhân</string>
+    <string name="title2"> Bằng cấp</string>
+    <string name="title3"> Sở thích</string>
+    <string name="title4"> Thông tin bổ sung </string>
+    <string name="hoten"> Họ tên </string>
+    <string name="ht_hint"> Họ tên </string>
+    <string name="cmnd"> CMND </string>
+    <string name="cmnd_hint"> Chứng minh nhân dân </string>
+    <string name="tc"> Trung cấp</string>
+    <string name="cd"> Cao đẳng</string>
+    <string name="dh"> Đại học</string>
+    <string name="db"> Đọc báo</string>
+    <string name="ds"> Đọc sách</string>
+    <string name="code"> Đọc code</string>
+
+</resources>
