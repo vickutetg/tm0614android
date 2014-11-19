@@ -8,8 +8,8 @@
 
     <!-- static include -->
     <fragment
-        android:id="@+id/fragment2"
-        android:name="com.hoangphan.tutor0403_fragment.fragment.Fragment2"
+        android:id="@+id/fragment1"
+        android:name="com.hoangphan.tutor0403_fragment.fragment.Fragment1"
         android:layout_width="fill_parent"
         android:layout_height="match_parent" 
         />
