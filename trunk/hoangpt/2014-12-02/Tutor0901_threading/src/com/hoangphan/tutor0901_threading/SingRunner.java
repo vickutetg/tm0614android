@@ -9,6 +9,6 @@ public class SingRunner implements Runnable {
 
 	@Override
 	public void run() {
+		
 	}
-
 }
