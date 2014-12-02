@@ -7,12 +7,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
 	private ImageView image;
 	private ProgressBar pgrImage;
+	public TextView txtCount;
+	public TextView txtSing;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +35,16 @@ public class MainActivity extends Activity {
 	}
 
 	private void count() {
-		CountThread counter = new CountThread();
+		//tao 1 thread moi
+		CountThread counter = new CountThread(this);
 		counter.start();
 	}
 
 	private void initUI() {
 		image = (ImageView) findViewById(R.id.image);
 		pgrImage = (ProgressBar) findViewById(R.id.pgrImage);
+		txtCount = (TextView) findViewById(R.id.txtCount);
+		txtSing = (TextView) findViewById(R.id.txtSing);
 	}
 
 	public void loadImage(View v){
@@ -77,4 +83,5 @@ public class MainActivity extends Activity {
 	public void checkResponse(View v){
 		Toast.makeText(this, "I am alive", Toast.LENGTH_SHORT).show();
 	}
+	
 }
