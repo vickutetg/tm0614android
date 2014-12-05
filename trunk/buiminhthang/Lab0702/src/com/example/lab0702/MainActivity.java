@@ -19,6 +19,8 @@ public class MainActivity extends Activity {
 		TextView tv3 = (TextView) findViewById(R.id.tv3);
 		TextView tv4 = (TextView) findViewById(R.id.tv4);
 		TextView tv5 = (TextView) findViewById(R.id.tv5);
+		TextView tv6 = (TextView) findViewById(R.id.tv6);
+		TextView tv7 = (TextView) findViewById(R.id.tv7);
 		Typeface custom_font = Typeface.createFromAsset(getAssets(),
 				"fonts/GothaProMed.otf");
 		tv1.setTypeface(custom_font);
@@ -26,6 +28,8 @@ public class MainActivity extends Activity {
 		tv3.setTypeface(custom_font);
 		tv4.setTypeface(custom_font);
 		tv5.setTypeface(custom_font);
+		tv6.setTypeface(custom_font);
+		tv7.setTypeface(custom_font);
 
 	}
 
