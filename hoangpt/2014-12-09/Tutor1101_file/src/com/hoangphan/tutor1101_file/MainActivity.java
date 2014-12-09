@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
@@ -97,7 +98,7 @@ public class MainActivity extends Activity {
 	public void saveTextToFile(View v){
 		//save external
 		try {
-			FileWriter writer = new FileWriter(new File("/sdcard/test"));
+			FileWriter writer = new FileWriter(new File("/sdcard/test"), true);
 			String hello = edtHello.getText().toString();
 			writer.write(hello+"\n");
 			
@@ -128,5 +129,21 @@ public class MainActivity extends Activity {
 		}
 		
 		Toast.makeText(this, "Save ok", Toast.LENGTH_LONG).show();
+	}
+	
+	public void readPref(View v){
+		//input stream 
+		try {
+			InputStream in = openFileInput("test");
+			BufferedReader buffRe = new BufferedReader(new InputStreamReader(in));
+			String helloMes = buffRe.readLine();
+			edtHello.setText(helloMes);
+
+			String fontSi = buffRe.readLine();
+			int fontSize = Integer.parseInt(fontSi);
+			skFont.setProgress(fontSize);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

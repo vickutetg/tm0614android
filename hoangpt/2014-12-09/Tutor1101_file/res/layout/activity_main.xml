@@ -54,6 +54,7 @@
         android:layout_alignLeft="@+id/btnSave"
         android:layout_below="@+id/btnSave"
         android:layout_marginTop="24dp"
-        android:text="Read from internal file" />
+        android:text="Read from internal file" 
+        android:onClick="readPref"/>
 
 </RelativeLayout>
