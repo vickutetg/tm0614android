@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Headache</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Did you sense it coming ?</string>
+    <string name="weakness">Weakness</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="tingling_in_head">Tingling in Head</string>
+    <string name="visual">Visual Disturbance</string>
+    <string name="tingling_in_neck">Tingling in Neck</string>
+    <string name="tingling_eyes">Tingling near Eye(s)</string>
+    <string name="none">None</string>
+    <string name="add">Add New</string>
+    <string name="bother_me_late">BOTHER ME LATER</string>
+    <string name="skip">SKIP</string>
+    <string name="pain_onset">PAIN ONSET</string>
+    <string name="title_activity_screen2">Screen2Activity</string>
+    <string name="next">NEXT</string>
+    <string name="title_activity_screen3">Screen3Activity</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="back">BACK TO SUMARY</string>
+
+</resources>

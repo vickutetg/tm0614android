@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/img1" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="43dip"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/txtFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="7dip"
+            android:text="Food Name"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/igmAdvance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFoodName"
+            android:layout_marginLeft="20dip"
+            android:layout_marginBottom="7dip"
+            android:src="@drawable/ic_advance" />
+
+        <TextView
+            android:id="@+id/txtDificult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFoodName"
+            android:layout_marginLeft="3dip"
+            android:layout_marginBottom="7dip"
+            android:layout_toRightOf="@+id/igmAdvance"
+            android:text="advance"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/imgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/igmAdvance"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/txtDificult"
+            android:src="@drawable/ic_clock" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtDificult"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@+id/imgTime"
+            android:text="40p"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

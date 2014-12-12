@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="205dp" >
+
+        <ImageView
+            android:id="@+id/imgFoodDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RelativeLayout"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/img1" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/txtFoodNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="7dip"
+                android:text="Food Name"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/igmAdvanceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFoodNameDetail"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="1dip"
+                android:src="@drawable/ic_advance" />
+
+            <TextView
+                android:id="@+id/txtDificultDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFoodNameDetail"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/igmAdvanceDetail"
+                android:text="advance"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/imgTimeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/igmAdvanceDetail"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/txtDificultDetail"
+                android:src="@drawable/ic_clock" />
+
+            <TextView
+                android:id="@+id/txtTimeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtDificultDetail"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@+id/imgTimeDetail"
+                android:text="40p"
+                android:textSize="8sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/txtNguyenLieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyên Liệu"
+                android:textColor="#008f45"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtHuongDan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hướng dẫn thực hiện"
+                android:textColor="#008f45"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtCook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

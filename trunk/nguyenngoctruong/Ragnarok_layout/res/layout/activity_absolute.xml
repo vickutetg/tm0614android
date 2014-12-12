@@ -1,0 +1,56 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dip"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_x="10dip"
+        android:layout_y="20dip"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_x="100dip"
+        android:layout_y="0dip" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_x="10dip"
+        android:layout_y="60dip"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_x="100dip"
+        android:layout_y="40dip"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_x="118dp"
+        android:layout_y="166dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_x="174dp"
+        android:layout_y="281dp"
+        android:text="Forgot" />
+
+</AbsoluteLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Foods>
+    <Food>
+        <Name>ABC</Name>
+        <Dificult>Trung Bình</Dificult>
+        <Duration>35</Duration>
+        <Material>
+            300g tôm sú
+			200g bông hẹ
+			100g nấm rơm
+			2 thìa cà phê hạt nêm 
+			1 thìa cà phê nước mắm chấm 
+        </Material>
+        <Cook>
+            1. Tôm sú cắt bớt đầu, lột vỏ, chừa đuôi, chẻ lưng lấy chỉ đen. Bông hẹ chần sơ qua nước sôi. Cuộn bông hẹ vào lưng tôm, làm lần lượt đến hết.
+			2. Nấm rơm rửa sơ nước muối, bổ đôi.
+			3. Đun sôi 700ml nước, cho tôm đã cuộn vào nấu chín, cho nấm rơm vào, khoảng 10 phút sau nêm hạt nêm Knorr từ Thịt Thăn, Xương Ống và Tủy - Bổ sung Vitamin A, nước mắm chấm Knorr vào, nếm vừa ăn, tắt bếp.
+			4. Múc canh ra tô, dùng với cơm.
+        </Cook>
+        <ImageSource>food1.png</ImageSource>
+     </Food> 
+     <Food>
+        <Name>CÁNH GÀ NGÂM SỮA CHIÊN GIÒN</Name>
+        <Dificult>Trung Bình</Dificult>
+        <Duration>45</Duration>
+        <Material>
+            1kg cánh gà, rửa sạch, để ráo, chặt làm hai  
+			200g bột mì  
+			500ml sữa tươi  
+			Bột tỏi, hạt nêm 
+			Ớt, bột tiêu  
+			Nước chấm  
+			Tương ớt, tương cà  
+        </Material>
+        <Cook>
+          	1. Cánh gà ngâm sữa qua đêm.  
+			2. Trộn hỗn hợp bột với hạt nêm Knorr từ thịt thăn và xương ống với bột tỏi, ớt bột.
+			   Cho hỗn hợp vào hộp nhựa.  
+			3. Cho gà vào hộp, lắc nhẹ cho bột áo đều trên cánh gà.  
+			4. Chiên cánh gà từ 12-15 phút ở nhiệt độ 160độC  
+			5. Dọn kèm với tương ớt hoặc tương cà. 
+			Mách nhỏ: Khi thực hiện các món chiên với bột khô, để bột áo đều bên ngoài thực phẩm,
+			các bạn có thể cho bột và gia vị vào 1 cái hộp,
+			trộn đều rồi cho thực phẩm vào lại hộp rồi đậy nắp, lắc đều. 
+        </Cook>
+        <ImageSource>food2.png</ImageSource>
+        
+        
+    </Food>
+    
+     <Food>
+        <Name>CƠM CHIÊN BÍ ĐỎ</Name>
+        <Dificult>Khó</Dificult>
+        <Duration>35</Duration>
+        <Material>
+            3 chén cơm trắng
+			100g thịt xông khói chay
+			100g bí đỏ
+			100g đậu Hà Lan
+			1 trái bắp luộc chín
+			1 thìa súp nho khô
+			1 cây hành boa-rô
+			1 thìa súp bơ nước
+			2 thìa súp dầu mè
+			1 thìa cà phê bột cà ri
+			½ thìa cà phê muối
+			½ thìa cà phê đường
+			2 thìa cà phê Hạt nêm
+			Nước tương ăn kèm
+        </Material>
+        <Cook>
+            1. Thịt xông khói cắt hạt lựu
+			2. Bí đỏ hấp chín, tán nhuyễn. Đậu Hà Lan luộc chín. Bắp tách hạt. Nho khô ngâm mềm. Boa-rô bỏ lá, cắt hạt lựu
+			3. Đun nóng bơ, cho boa-rô vào phi thơm, cho lần lượt bắp, đậu Hà Lan, thịt xông khói vào xào, nêm ít muối, đường, Hạt nêm Knorr từ Nấm và Rong biển, trút ra tô, để riêng
+			4. Làm nóng dầu mè, phi thơm boa-rô, cho bột cà ri vào xào nhanh tay với bí đỏ, cho cơm vào trộn đều. Chiên cho cơm săn lại, cho hỗn hợp đã xào vào, thêm nho khô, trộn đều, nêm 2 thìa cà phê hạt nêm
+			5. Dọn dùng kèm nước tương.
+        </Cook>
+        <ImageSource>food3.png</ImageSource>
+        
+        
+    </Food>
+    
+    
+    
+</Foods>
