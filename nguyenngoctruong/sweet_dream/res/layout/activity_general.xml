@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="@string/sleep_mode_setting"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="8dip"
+                    android:text="@string/ring_mode"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:paddingLeft="10dip"
+                    android:text="@string/set_ring_mode" />
+
+                <Spinner
+                    android:id="@+id/spnRingMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="8dip"
+                    android:text="@string/disable_wifi"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt3"
+                    android:paddingLeft="10dip"
+                    android:text="@string/disable_wifi_connection" />
+
+                <ToggleButton
+                    android:id="@+id/tgbWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="8dip"
+                    android:text="@string/disable_bluetooh"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt5"
+                    android:paddingLeft="10dip"
+                    android:text="@string/disable_bluetooh_connection" />
+
+                <ToggleButton
+                    android:id="@+id/tgbBluetooh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="#FFFFFF"
+                android:text="@string/schedule"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="15dip"
+                    android:text="@string/sleep_time"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt7"
+                    android:paddingLeft="10dip"
+                    android:text="@string/start_time" />
+
+                <Button
+                    android:id="@+id/btnSleepTime"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="abc" />
+
+                <DigitalClock
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_toLeftOf="@+id/btnSleepTime"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="15dip"
+                    android:text="@string/wake_up_time"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt9"
+                    android:paddingLeft="10dip"
+                    android:text="@string/start_time" />
+
+                <Button
+                    android:id="@+id/btnWakeUpTime"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="abc" />
+
+                <DigitalClock
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_toLeftOf="@+id/btnWakeUpTime"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+                
+                
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Checkout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Invoice">INVOICE</string>
+    <string name="Subtotal">Subtotal</string>
+    <string name="Discount">Discount</string>
+    <string name="Gift">Gift</string>
+    <string name="Total">Total</string>
+    <string name="payment_detail">PAYMENT DETAIL</string>
+    <string name="Choose_Payment">Choose Payment Method</string>
+    <string name="your_name">Your name</string>
+    <string name="Address">Address</string>
+    <string name="Card_valid">Card valid till</string>
+    <string name="card_nr">Card nr</string>
+    <string name="Captcha">Captcha</string>
+    <string name="Pay">Pay</string>
+    <string name="city">City</string>
+    <string name="District">District</string>
+	<string name="space">-</string>
+</resources>

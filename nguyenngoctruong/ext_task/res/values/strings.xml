@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ext_task</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Hour">Hour</string>
+    <string name="Minute">Minute</string>
+    <string name="Second">Second</string>
+    <string name="Add">Add</string>
+    <string name="Delete">Delete</string>
+    <string name="Save">Save</string>
+    <string name="title_activity_todo_list">TodoListActivity</string>
+    <string name="your_task">Your task today</string>
+    <string name="add_more">Add more ...</string>
+    <string name="Clear">Clear</string>
+
+</resources>

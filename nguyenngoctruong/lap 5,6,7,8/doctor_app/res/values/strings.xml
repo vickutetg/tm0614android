@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">doctor_app</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="icon">icon</string>
+    <string name="hint_acc">Your Account</string>
+    <string name="hint_pass">Password</string>
+    <string name="login">Login</string>
+    <string name="loginFB">Login with facebook</string>
+    <string name="forgot_pass">Forget Password ?</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="profile">Profile</string>
+    <string name="ava">ava</string>
+    <string name="vallentin">VALLENTIN</string>
+    <string name="graphic">GRAPHIC DESIGNER</string>
+    <string name="last_mess">Lastest messages</string>
+    <string name="acc_setting">Accout Setting</string>
+
+</resources>

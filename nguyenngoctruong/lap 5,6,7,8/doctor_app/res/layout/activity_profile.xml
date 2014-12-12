@@ -1,0 +1,278 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#13baba"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/start_bar"
+            android:layout_width="match_parent"
+            android:layout_height="68dip" >
+
+            <Button
+                android:id="@+id/btnMennu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/btn_menu" />
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/btn_setting" />
+
+            <TextView
+                android:id="@+id/txtProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/profile"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip" >
+
+            <ImageView
+                android:id="@+id/imgAva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_ava"
+                android:contentDescription="@string/ava" />
+
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_email" />
+
+            <RelativeLayout
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignRight="@+id/btnEmail"
+                android:layout_alignTop="@+id/btnEmail"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/ic_noti" >
+
+                <TextView
+                    android:id="@+id/txtNotiEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnGlobal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnEmail"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="4dip"
+                android:background="@drawable/ic_global" />
+
+            <RelativeLayout
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignRight="@+id/btnGlobal"
+                android:layout_alignTop="@+id/btnGlobal"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/ic_noti" >
+
+                <TextView
+                    android:id="@+id/txtNotiGlo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="9"
+                    android:textColor="#FFFFFF"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btnEmail"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/ic_money" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip" >
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/vallentin"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtJobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtName"
+                android:text="@string/graphic"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtLastMess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtJobTitle"
+                android:layout_marginTop="10dip"
+                android:text="@string/last_mess"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/viewLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dip"
+                android:layout_below="@+id/txtLastMess"
+                android:layout_marginTop="10dip"
+                android:background="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imgAvaEmpty1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine1"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/ic_empty" />
+
+            <TextView
+                android:id="@+id/txtMessContent"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine1"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="15dip"
+                android:layout_toRightOf="@+id/imgAvaEmpty1"
+                android:text="I&apos;m going to make ..."
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtTo"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMessContent"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@+id/imgAvaEmpty1"
+                android:text="To Jane"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imgAvaEmpty2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine1"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/txtMessContent"
+                android:background="@drawable/ic_empty" />
+
+            <ImageView
+                android:id="@+id/imgAvaEmpty3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine1"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/imgAvaEmpty2"
+                android:background="@drawable/ic_empty" />
+
+            <ImageView
+                android:id="@+id/btnFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/viewLine1"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/btn_file" />
+
+            <View
+                android:id="@+id/viewLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dip"
+                android:layout_below="@+id/btnFile"
+                android:layout_marginTop="10dip"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtAccSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine2"
+                android:layout_marginTop="20dip"
+                android:text="@string/acc_setting"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnMyPro"
+                android:layout_width="115dip"
+                android:layout_height="37dip"
+                android:layout_below="@+id/txtAccSetting"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/button_profile_style"
+                android:text="MY PROFILE"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnPrivacy"
+                android:layout_width="75dip"
+                android:layout_height="37dip"
+                android:layout_alignBottom="@+id/btnMyPro"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_profile_style"
+                android:text="PRIVACY"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnTellFriend"
+                android:layout_width="115dip"
+                android:layout_height="37dip"
+                android:layout_alignBottom="@+id/btnMyPro"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_profile_style"
+                android:text="TELL A FRIEND"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

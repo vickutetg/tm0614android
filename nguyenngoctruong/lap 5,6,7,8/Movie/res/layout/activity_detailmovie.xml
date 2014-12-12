@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/txtRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Ratings"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnRate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRating"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/ic_rate" />
+
+        <Button
+            android:id="@+id/btnRate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRating"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/btnRate1"
+            android:background="@drawable/ic_rate" />
+
+        <Button
+            android:id="@+id/btnRate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRating"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/btnRate2"
+            android:background="@drawable/ic_rate" />
+
+        <Button
+            android:id="@+id/btnRate4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRating"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/btnRate3"
+            android:background="@drawable/ic_unrate" />
+
+        <Button
+            android:id="@+id/btnRate5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRating"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/btnRate4"
+            android:background="@drawable/ic_unrate" />
+
+        <TextView
+            android:id="@+id/txtSynopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRate1"
+            android:layout_marginTop="25dip"
+            android:text="Synopsis"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtSynopsisDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSynopsis"
+            android:layout_marginTop="5dip"
+            android:text="1234567890000000000000-=qưẻtyuiopádfghjklzxcvbnmqưẻtyuióadfghjkxcvbnmsdfghjkqưẻtyúidfghjsdghjẻghgfbsdfsdfsdfsdvsdvsdvdsvdsfdsfsdfdsgfdbcvbfbdgdfgfgfdgfdbdfdfg" />
+    </RelativeLayout>
+
+</ScrollView>

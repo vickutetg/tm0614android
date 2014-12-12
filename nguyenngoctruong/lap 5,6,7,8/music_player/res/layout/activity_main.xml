@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="#000000" >
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="22.5dip"
+            android:layout_height="21dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dip"
+            android:background="@drawable/btn_menu" />
+
+        <Button
+            android:id="@+id/btnFavirite"
+            android:layout_width="25dip"
+            android:layout_height="21dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dip"
+            android:background="@drawable/btn_favorite" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Ellie Goulding"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="360dip" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cover" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_play" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6.5dip"
+        android:background="#FFFFFF" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="#000000" >
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="14.5dip"
+            android:layout_height="27dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dip"
+            android:background="@drawable/btn_next_background" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="14.5dip"
+            android:layout_height="27dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dip"
+            android:background="@drawable/btn_back_background" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtNameSinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goodness Gracious"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNameSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halcyon Days"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60.5dip"
+        android:background="@drawable/end_layout" >
+    </RelativeLayout>
+
+</LinearLayout>
