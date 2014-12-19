@@ -50,8 +50,8 @@ public class ContactActivity extends ListActivity {
 				);
 		
 		//adapter (same as adapter)
-		String[] from = new String[] { ContactsContract.Contacts.DISPLAY_NAME, "_id" };
-		int[] to = new int[] { android.R.id.text1,  android.R.id.text2 };
+		String[] from = new String[] { ContactsContract.Contacts.DISPLAY_NAME, "_id" }; //data binding
+		int[] to = new int[] { android.R.id.text1,  android.R.id.text2 }; //view using data
 		SimpleCursorAdapter adapter = new SimpleCursorAdapter( //map from cursor to column
 				this, 
 				android.R.layout.simple_list_item_2, 
