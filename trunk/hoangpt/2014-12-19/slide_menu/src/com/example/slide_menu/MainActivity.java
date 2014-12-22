@@ -29,6 +29,8 @@ public class MainActivity extends Activity {
 				slide_me.toggleLeftDrawer();
 			}
 		});
+		//left_button.click('toggleLeftDrawer'); function oriented
+		
 		right_button.setOnClickListener(new View.OnClickListener() {
 
 			@Override
