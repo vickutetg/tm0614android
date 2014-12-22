@@ -1,4 +1,4 @@
-<com.hoangphan.check12a_student.ui.MainLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.entropy.slidingmenu2.layout.MainLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     
@@ -11,7 +11,7 @@
 
         <ListView
             android:id="@+id/activity_main_menu_listview"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#B4D609"
             android:cacheColorHint="#00000000" >
@@ -54,11 +54,9 @@
 		    android:id="@+id/activity_main_content_fragment"
 		    android:layout_width="match_parent"
 		    android:layout_height="match_parent" >
-        <ListView 
-        	 android:id="@android:id/list"
-        	 android:layout_width="match_parent"
-		 android:layout_height="match_parent"
-        ></ListView>
-    		</FrameLayout>
+        
+    	</FrameLayout>
+        
     </LinearLayout>
-</com.hoangphan.check12a_student.ui.MainLayout>
+
+</com.entropy.slidingmenu2.layout.MainLayout>
