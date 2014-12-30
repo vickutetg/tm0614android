@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Weather</string>
+    <string name="title_activity_weather">Weather</string>
+    <string name="about">About us</string>
+    <string name="setting">Setting up</string>
+    <string name="date">Current Date</string>
+    <string name="temp">Temperature</string>
+    <string name="humi">Humidity</string>
+    <string name="cond">Condition</string>
+    <string name="button">OK</string>
+
+</resources>

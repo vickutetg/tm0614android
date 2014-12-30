@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    
+    
+    <item android:id="@+id/menu_classic_item"
+          android:icon="@drawable/ic_menu_gameplay"
+          android:title="@string/menu_classic_item" >
+          <menu>
+          <group android:checkableBehavior="single" > 
+               <item android:id="@+id/menu_set_classic"
+                      android:title="@string/menu_set_classic"/>
+               
+                <item android:id="@+id/menu_clear_classic"
+                      android:title="@string/menu_clear_classic" />
+          </group>
+          </menu>
+    </item>
+        
+     <item android:id="@+id/menu_choose_picture_item"
+          android:icon="@drawable/ic_menu_picturesource"
+          android:title="@string/menu_choose_picture_item" >
+          <menu>
+          <group android:checkableBehavior="single" > 
+               <item android:id="@+id/menu_choose_sd"
+                      android:title="@string/menu_choose_sd"/>
+               
+                <item android:id="@+id/menu_choose_gallery"
+                      android:title="@string/menu_choose_gallery" />
+          </group>
+          </menu>
+    </item>
+    
+          <item android:id="@+id/menu_options_item"
+          android:icon="@drawable/ic_menu_savepicture"
+          android:title="@string/menu_options_item" >
+          <menu>
+          <group android:checkableBehavior="all" > 
+               <item android:id="@+id/menu_save_picture"
+                      android:title="@string/menu_save_picture"/>
+               <item android:id="@+id/menu_use_timer"
+                      android:title="@string/menu_use_timer" />
+               
+          </group>
+          </menu>
+    </item>
+    
+     <item android:id="@+id/menu_game_actions_item"
+          android:icon="@drawable/ic_menu_slide"
+          android:title="@string/menu_game_actions_item" >
+          <menu>
+          <group android:checkableBehavior="none" > 
+               <item android:id="@+id/menu_options_newgame"
+                      android:title="@string/menu_options_newgame"/>
+               
+                <item android:id="@+id/menu_options_scramble"
+                      android:title="@string/menu_options_scramble" />
+          </group>
+          </menu>
+    </item>
+    
+     <item android:id="@+id/menu_game_showtext_item"
+          android:icon="@drawable/ic_menu_text"
+          android:title="@string/menu_game_showtext_item" >
+          <menu>
+          <group android:checkableBehavior="none" > 
+               <item android:id="@+id/menu_showtext_help"
+                      android:title="@string/menu_showtext_help"/>
+               
+                <item android:id="@+id/menu_showtext_credits"
+                      android:title="@string/menu_showtext_credits" />
+          </group>
+          </menu>
+    </item>
+    
+</menu>

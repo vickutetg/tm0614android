@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PuzzleActivity!</string>
+    <string name="app_name">Awesome Pic Puzzle</string>
+	
+	<string name="menu_text">blank</string>
+	<string name="menu_classic_item">Game Play</string>
+	<string name="menu_set_classic">Classic</string>
+	<string name="menu_clear_classic">Easy</string>
+	<string name="menu_choose_picture_item">Picture Source</string>
+	<string name="menu_choose_sd">Built-in Chooser</string>
+	<string name="menu_choose_gallery">Picture Gallery</string>
+	<string name="menu_options_item">Options</string>
+	<string name="menu_save_picture">Save Picture</string>
+	<string name="menu_use_timer">Slower Transitions</string>
+	<string name="menu_game_actions_item">Game Actions</string>
+	<string name="menu_options_newgame">New Game</string>
+	<string name="menu_options_scramble">Scramble Picture</string>
+	<string name="menu_game_showtext_item">Info</string>
+	<string name="menu_showtext_help">Help</string>
+	<string name="menu_showtext_credits">Credits</string>
+	
+	<string name="text_help">
+\n\nGENERAL
+\nAwesome Pic Puzzle is a puzzle game. At the beginning of the game 
+you choose a picture from your phone. Then the game divides up the 
+picture into tiles. The game also removes one of the tiles from the
+ screen so that there is a blank spot in the puzzle. You can then 
+ move around the tiles as you wish, swapping tiles for the blank 
+ tile. Real game play starts when you choose the =Scramble= option, 
+ which scrambles the tiles so that you can try to re-assemble the 
+ original picture. Tapping a tile with your finger tells the game 
+ that that is the tile that you want to move. The rules for which 
+ tiles you can move and where you can move them are slightly different 
+ in =Classic= and =Easy= mode. See below.
+
+\n\nCLASSIC GAME PLAY
+\nIn =Classic= mode the game is much like one that you played as a 
+child. Each tile can only be moved into a blank tile space only if the 
+space is immediately adjacent to the one you want to move. Classic 
+mode is deceptively simple and reassembling a picture can be challenging.
+
+\n\nEASY GAME PLAY
+\nIn =Easy= mode the game is slightly modified from classic mode. The 
+rules for moving a piece are that each tile can be moved to the 
+location of the blank tile simply by touching it. It does not matter 
+where the blank tile is in relation to the tile you want to move. Simply 
+touch the tile you want to move and it will be swapped with the blank tile.
+
+\n\nSCRAMBLE
+\nWhen you click =Scramble= the tiles in the picture are scrambled in 
+a random way. The tile that is missing, essential to the game, is 
+not scrambled. It comes from the same spot in the original picture from
+before the puzzle was scrambled. If you try to solve the puzzle using =Easy= mode
+and then you switch to =Classic= mode you may find the puzzle 
+unsolvable. If this happens, switch back to =Easy= mode to finish the
+puzzle.
+
+\n\nSAVE PICTURE
+\nThe game can be configured to save the picture that you are using for 
+your puzzle or to choose a new picture every time you play. If you choose 
+to save the picture the entire state of game progress will be saved 
+every time you exit the game normally. If you decide to choose a new 
+picture with every restart, the program prompts you to find out how you 
+want to choose the picture. 
+
+\n\nPICTURE SOURCE - GALLERY OR BUILT-IN
+\nWhen it is time to start a new game your two primary options are to 
+choose from the gallery or to use the games built in file chooser. The 
+built in chooser is useful if your picture is on the SD Card. The =Gallery= 
+option uses your phones picture chooser. If you have a file 
+manager on your phone, you will be given the option to use that when 
+you select the =Gallery= option.
+
+\n\nNOTE
+\nIf the picture that you choose is too small the game will crash.
+</string>
+	
+	<string name="text_credits">This game was created by David Liebman. It is meant to copy a plastic puzzle game he played as a 
+	    child. </string>
+</resources>

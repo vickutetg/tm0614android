@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3FFB5">
+		<LinearLayout
+		    android:id="@+id/main"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="#F3FFB5">
+		   	
+		
+		    <TextView 
+		        android:id="@+id/addCity"
+		    	android:layout_width="match_parent"
+		        android:layout_height="100dp"
+		        android:gravity="center"
+		        android:background="#50000000"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:textSize="20sp"
+		        android:text="Add City"/>
+	    
+	        </LinearLayout>
+	</ScrollView>
+	<RelativeLayout
+	    android:id="@+id/addCityWrapper"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#50000000"
+	    android:gravity="center" 
+	    android:visibility="invisible">
+		<LinearLayout 
+		    android:layout_width="300dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="#E1B5FF"
+		    android:gravity="center">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:textSize="20sp"
+		        android:text="Name:" />
+		    <EditText
+		        android:id="@+id/name"
+		        android:layout_width="250dp"
+		        android:layout_height="20dp"
+		        android:layout_marginTop="10dp"
+		        android:textSize="20sp"
+		        android:background="#E7C4FF"/>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:textSize="20sp"
+		        android:text="Id (Zip)" />
+		    <EditText
+		        android:id="@+id/cityId"
+		        android:layout_width="250dp"
+		        android:layout_height="20dp"
+		        android:layout_marginTop="10dp"
+		        android:textSize="20sp"
+		        android:background="#E7C4FF"/>
+		     <TextView
+		        android:id="@+id/add"
+		        android:layout_width="100dp"
+		        android:layout_height="30dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="20dp"
+		        android:background="#B03FFC"
+		        android:textSize="20sp"
+		        android:gravity="center"
+		        android:text="Add" />
+		</LinearLayout>
+	</RelativeLayout>
+	<ScrollView 
+	    android:id="@+id/informationWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3FFB5"
+		android:visibility="invisible">
+		<LinearLayout
+		    android:id="@+id/information"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="#F3FFB5">
+		    <TextView 
+		        android:id="@+id/cityName"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginTop="5dp"
+		        android:textSize="40sp"
+		        android:text="Moscow"/>
+		    <TextView 
+		        android:id="@+id/temperature"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginTop="5dp"
+		        android:textSize="40sp"
+		        android:text="50 C"/>
+		    <LinearLayout 
+		        android:id="@+id/moreInfo"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="5dp"
+		        android:orientation="vertical">
+		        
+		    </LinearLayout>
+		    
+		    
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>
+
+

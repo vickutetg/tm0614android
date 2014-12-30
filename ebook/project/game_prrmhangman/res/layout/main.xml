@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="30dip" >
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button android:id = ""
+            android:layout_width="fill_parent"
+            android:layout_height="20pt"
+            android:layout_marginTop="5pt"
+            continue_button=""
+            android:background="@color/transparent"
+            android:text="@string/continue_btn"
+            android:textColor="@color/white"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button android:id
+            id=""
+            android:layout_width="fill_parent"
+            android:layout_height="20pt"
+            android:layout_marginTop="5pt"
+            new_button=""
+            android:background="@color/transparent"
+            android:text="@string/new_game_btn"
+            android:textColor="@color/white"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Buttonandroid:id
+            id=""
+            android:layout_width="fill_parent"
+            android:layout_height="20pt"
+            android:layout_marginTop="5pt"
+            about_button=""
+            android:background="@color/transparent"
+            android:text="@string/about_btn"
+            android:textColor="@color/white"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Buttonandroid:id
+            id=""
+            android:layout_width="fill_parent"
+            android:layout_height="20pt"
+            android:layout_marginTop="5pt"
+            exit_button=""
+            android:background="@color/transparent"
+            android:text="@string/exit_btn"
+            android:textColor="@color/white"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayoutandroid:orientation>
+
+
+</LinearLayout>

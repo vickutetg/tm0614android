@@ -48,7 +48,7 @@ public class FlowerActivity extends Activity {
       @Override
       public void onClick(View v) {
        String flower = flowerEdit.getText().toString();
-       if(!flower.equals("")){
+       if(!flower.equals("")){ //validation
          flowerEdit.setText(""); //reset
          
          //add to order
@@ -73,6 +73,7 @@ public class FlowerActivity extends Activity {
         cal.add(Calendar.DATE, 3);
         Date expire = cal.getTime();
         
+        //java format, string format
         SimpleDateFormat formater = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         String nowStr = formater.format(now);
         String expireStr = formater.format(expire);

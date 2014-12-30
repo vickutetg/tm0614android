@@ -46,9 +46,9 @@ public class SecondActivity extends Activity {
         
         _toaster(helpMsg);
         _toaster("This month is "+monthInt);
-        for (String step : stepArr) {
-          _toaster(step);
-        }
+        //for (String step : stepArr) {
+        //  _toaster(step);
+        //}
     }
 
     private void _toaster(String msg) {

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.animoto.android.views.DraggableGridView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dgv" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:layout_alignParentTop="true" 
+    android:layout_alignParentLeft="true"
+    android:numColumns="5"
+    android:stretchMode="columnWidth"
+    android:gravity="center">
+    
+</com.animoto.android.views.DraggableGridView>
+
+<!-- <GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:columnWidth="90dp"
+    android:numColumns="5"   
+    android:verticalSpacing="0dp"
+    android:horizontalSpacing="0dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+/>-->

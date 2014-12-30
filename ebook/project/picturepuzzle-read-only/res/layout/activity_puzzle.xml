@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >
+    
+<Gallery 
+	android:id="@+id/GallerycutPieces" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_weight="1"></Gallery>
+
+<GridView  
+    android:id="@+id/gridviewToAssemble"
+    android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:columnWidth="2dp"
+    android:numColumns="3"
+        android:verticalSpacing="2dp"
+    android:horizontalSpacing="2dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    android:layout_weight="1"
+    
+    
+     />
+</LinearLayout>

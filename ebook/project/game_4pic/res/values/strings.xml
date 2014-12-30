@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">4pic</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">4pic Test!</string>
+    <string name="hintImageDesc">Quiz hint image</string>
+    <string name="correct_Title">Nice!</string>
+    <string name="correct_Message">Nice!</string>
+    <string name="inCorrect_Message">Oh! Nooooo.</string>
+    <string name="OK">close</string>
+    <color name="correctBackgroundColor">#0099CC</color>
+    <color name="inCorrectBackgroundColor">#FF4444</color>
+    <color name="solveBackgroundColor">#FFFFFF</color>
+    
+</resources>

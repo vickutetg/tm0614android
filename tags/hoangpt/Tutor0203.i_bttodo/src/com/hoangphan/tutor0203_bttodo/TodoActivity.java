@@ -88,29 +88,39 @@ public class TodoActivity extends Activity {
       });
       builder.show();
     } else {
-      Work work = new Work();
-      work.setName(txtWork.getText().toString());
-      work.setHour(Integer.parseInt(txtHour.getText().toString()));
-      work.setMinute(Integer.parseInt(txtMinute.getText().toString()));
-      listWorks.add(work);
-      
-      //sort work base on time
-      Collections.sort(listWorks, new Comparator<Work>() {
+    	 //validation for number > 24
+    	 if(Integer.parseInt(txtHour.getText().toString()) > 24){
+    		 //display dialog
+    	      AlertDialog.Builder builder = new AlertDialog.Builder(TodoActivity.this);
+    	      builder.setTitle("Error info provided")
+    	      	.setMessage("Hour > 24h")
+    	        .setPositiveButton("OK", null)
+    	        .show();
+    	 } else {
+    	      Work work = new Work();
+    	      work.setName(txtWork.getText().toString());
+    	      work.setHour(Integer.parseInt(txtHour.getText().toString()));
+    	      work.setMinute(Integer.parseInt(txtMinute.getText().toString()));
+    	      listWorks.add(work);
+    	      
+    	      //sort work base on time
+    	      Collections.sort(listWorks, new Comparator<Work>() {
 
-        @Override
-        public int compare(Work thisWork, Work thatWork) {
-          int thisTime = thisWork.getHour()*60 + thisWork.getMinute();
-          int thatTime = thatWork.getHour()*60 + thatWork.getMinute();
-          return Integer.compare(thisTime, thatTime);
-        }
-      });
-      Log.d("add", work.toString());
-      adapter.notifyDataSetChanged();
-      
-      //reset form
-      txtWork.setText("");
-      txtHour.setText("");
-      txtMinute.setText("");
+    	        @Override
+    	        public int compare(Work thisWork, Work thatWork) {
+    	          int thisTime = thisWork.getHour()*60 + thisWork.getMinute();
+    	          int thatTime = thatWork.getHour()*60 + thatWork.getMinute();
+    	          return Integer.compare(thisTime, thatTime);
+    	        }
+    	      });
+    	      Log.d("add", work.toString());
+    	      adapter.notifyDataSetChanged();
+    	      
+    	      //reset form
+    	      txtWork.setText("");
+    	      txtHour.setText("");
+    	      txtMinute.setText("");    		 
+    	 }
     }
   }
 }

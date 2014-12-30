@@ -34,7 +34,8 @@ public class MainActivity extends Activity {
 					&& KeyEvent.KEYCODE_ENTER == keyCode) {
 				Context app = getBaseContext();
 				String name = nameEdit.getText().toString();
-
+				
+				//program layout 
 				nameEdit.setText("");// reset
 
 				TextView sayText = new TextView(app);

@@ -74,7 +74,11 @@ public class MainActivity extends Activity {
 			switch (getResultCode()) {
 		    case Activity.RESULT_OK:
 		    		Toast.makeText(context, "sent to carrier", Toast.LENGTH_SHORT).show();
-		        break;
+		        
+		    		//goi them app gi do
+		    		
+		    		//thu tien gi do, goi wallet ra thu tien
+		    		break;
 		    default:
 		    		Toast.makeText(context, "something error", Toast.LENGTH_SHORT).show();
 		    		break;
