@@ -32,7 +32,7 @@ public class FirstActivity extends Activity {
   }
 
   public void gotoTest(View v){
-    Intent i = new Intent("com.hoangphan.tutor0301_hqinfo.SecondActivity");
+    Intent i = new Intent("di_bien");
     
     //pass data to other activity
     i.putExtra("helloMsg", "Welcome to app info.");

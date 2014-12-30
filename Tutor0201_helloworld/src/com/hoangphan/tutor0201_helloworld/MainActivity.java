@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 					&& KeyEvent.KEYCODE_ENTER == keyCode) {
 				String name = nameEdit.getText().toString();
 				nameEdit.setText("");// reset
-				helloTxt.setText("Welcome to Android world, " + name + ".");
+				helloTxt.setText("My name is Android minon, " + name + ".");
 				return true;
 			} else {
 				return false;

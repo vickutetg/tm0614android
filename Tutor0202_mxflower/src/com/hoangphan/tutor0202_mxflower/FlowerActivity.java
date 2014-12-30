@@ -29,7 +29,7 @@ public class FlowerActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     
-    //show toast help
+    //show toast help, collection
     String[] helps = new String[]{
         "I am Mai Xuan.",
         "I am sexy, kute and an flower girl.",

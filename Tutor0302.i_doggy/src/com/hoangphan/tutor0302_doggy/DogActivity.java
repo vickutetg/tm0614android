@@ -73,9 +73,9 @@ public class DogActivity extends Activity {
     runOnUiThread(new Runnable() {
       @Override
       public void run() {
-            int j = i%14;
+            int j = i%8;
             dogNr.setText("Dog image at "+j);
-            String pathImg = "/sdcard/Download/dog/T"+j+".gif";
+            String pathImg = "/sdcard/Download/cover/"+j+".jpg";
             dog.setImageBitmap(BitmapFactory.decodeFile(pathImg));
             i++;
         }

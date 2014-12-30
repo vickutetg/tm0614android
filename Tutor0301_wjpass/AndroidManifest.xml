@@ -26,7 +26,7 @@
             android:name="com.hoangphan.tutor0301_wjpass.SecondActivity"
             android:label="@string/title_activity_second" >
             <intent-filter>
-                <action android:name="com.hoangphan.tutor0301_hqinfo.SecondActivity" />
+                <action android:name="di_bien" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -38,6 +38,11 @@
         <activity
             android:name="com.hoangphan.tutor0301_wjpass.FourActivity"
             android:label="@string/title_activity_four" >
+            <intent-filter>
+                <action android:name="di_bien" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 
