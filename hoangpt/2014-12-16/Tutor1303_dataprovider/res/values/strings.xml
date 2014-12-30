@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">Tutor1203_dataprovider</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_add">AddActivity</string>
-
-</resources>
