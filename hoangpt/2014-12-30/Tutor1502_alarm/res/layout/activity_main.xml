@@ -36,6 +36,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/stopAlarm"
-        android:text="Stop Alarm at 10:30" />
+        android:text="Start Alarm repeatly" />
 
 </RelativeLayout>

@@ -23,6 +23,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+        Intent alarmIntent = new Intent(MainActivity.this, AlarmReceiver.class);
+        pendingIntent = (PendingIntent) PendingIntent.getBroadcast(MainActivity.this, 0, alarmIntent, 0);
+		
         findViewById(R.id.startAlarm).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,12 +38,19 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 startAt10();
             }
-        });    
+        }); 
+        
+        findViewById(R.id.stopAlarm).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                stop();
+            }
+        });        
 	}
 	
 	public void start() {
         AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        int interval = 1000;
+        int interval = 5000;
 
         manager.setInexactRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), interval, pendingIntent);
         Toast.makeText(this, "Alarm Set", Toast.LENGTH_SHORT).show();
@@ -62,10 +72,12 @@ public class MainActivity extends Activity {
         long firstTime = SystemClock.elapsedRealtime();
         firstTime += 1*1000;
 
-        Intent alarmIntent = new Intent(MainActivity.this, AlarmReceiver.class);
-        pendingIntent = (PendingIntent) PendingIntent.getBroadcast(MainActivity.this, 0, alarmIntent, 0);
-        
         manager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
-                        firstTime, 2*1000, pendingIntent);
+                        firstTime, 5*1000, pendingIntent);
     }
+	
+	public void stop(){
+	       AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+	       manager.cancel(pendingIntent);
+	}
 }
