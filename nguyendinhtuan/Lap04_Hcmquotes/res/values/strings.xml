@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lap04_Hcmquotes</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="data_items">
+        <item>Ho Chi Minh</item>
+        <item>Vo Nguyen Giap</item>
+        <item>Truong Chinh</item>
+    </string-array>
+
+    <string name="title_activity_hcm_">HCM_Activity</string>
+    <string name="title_activity_vng_">VNG_Activity</string>
+    <string name="title_activity_tt_">TT_Activity</string>
+    <string name="hcm_state">Không có gì quý hơn độc lập tự do</string>
+    <string name="vng_state">Đánh chắc tiến chắc</string>
+    <string name="tt_state">Phát triển kinh tế nhiều thành phần (thay vì chỉ có quốc doanh và tập thể); chuyển đổi cơ cấu kinh tế và cơ cấu đầu tư (tập trung làm hàng xuất khẩu, hàng tiêu dùng thay vì hàng công nghiệp; bỏ, hoãn các dự án lớn nhưng không hiệu quả...) và đổi mới quản lý (thay vì tập trung quan liêu bao cấp bằng tự chủ và cơ cấu mở)</string>
+    <string name="title_activity_state">StateActivity</string>
+
+</resources>
