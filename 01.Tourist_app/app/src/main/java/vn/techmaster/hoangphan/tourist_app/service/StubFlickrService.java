@@ -20,6 +20,8 @@ public class StubFlickrService extends FlickrService {
         names.add("anh_so_1.jpg");
         names.add("anh_so_2.jpg");
         names.add("anh_so_3.jpg");
+        names.add("anh_so_4.jpg");
+        names.add("anh_so_5.jpg");
 
         return names;
     }
