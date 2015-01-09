@@ -34,10 +34,6 @@ public class MainActivity extends Activity {
 
     public ArrayList<String> names;
 
-    boolean isListLoad = false;
-    boolean isGridLoad = false;
-
-
     /**
      * inner class
      */
@@ -76,10 +72,6 @@ public class MainActivity extends Activity {
         fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         fragmentTransaction.commit();
 
-        if(!isGridLoad){
-            prgCircle.setVisibility(View.VISIBLE);
-            AsyncTask<Void, Long, Void> task = new LoadFlickImageAsyncTask().execute();
-        }
     }
 
 
@@ -92,10 +84,6 @@ public class MainActivity extends Activity {
         fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         fragmentTransaction.commit();
 
-        if(!isListLoad){
-            prgCircle.setVisibility(View.VISIBLE);
-            AsyncTask<Void, Long, Void> task = new LoadFlickImageAsyncTask().execute();
-        }
 
         //if ok->display list
 
@@ -114,10 +102,10 @@ public class MainActivity extends Activity {
 
 
         //init AsyncTask to load image
+        new LoadFlickImageAsyncTask().execute();
     }
 
     private void _initUI() {
-
         prgCircle = (ProgressBar) findViewById(R.id.progressBar);
     }
 
@@ -145,7 +133,7 @@ public class MainActivity extends Activity {
 
         @Override
         protected Void doInBackground(Void... params) {
-            FlickrService service = FlickrService.initService("Stub");
+            FlickrService service = FlickrService.initService("Real");
             names = service.getAllImageName();
 
             return null;
@@ -155,7 +143,6 @@ public class MainActivity extends Activity {
         protected void onPostExecute(Void aVoid) {
             _showListPhoto();
             prgCircle.setVisibility(View.INVISIBLE);
-            isListLoad = true;
         }
     }
 
