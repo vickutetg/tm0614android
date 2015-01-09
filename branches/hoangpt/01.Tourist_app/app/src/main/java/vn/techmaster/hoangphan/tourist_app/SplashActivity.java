@@ -73,7 +73,7 @@ public class SplashActivity extends Activity {
             }
         }
 
-        fadein2.setAnimationListener(animeListener);
+        customeAmine.setAnimationListener(animeListener);
     }
 
 
