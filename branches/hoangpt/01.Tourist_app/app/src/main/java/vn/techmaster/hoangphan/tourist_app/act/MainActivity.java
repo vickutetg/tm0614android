@@ -25,6 +25,8 @@ import vn.techmaster.hoangphan.tourist_app.service.FlickrService;
  */
 public class MainActivity extends Activity {
 
+    private static final String SERVICE_NAME = "Real";
+
     private android.app.ActionBar.Tab listTab;
     private android.app.ActionBar.Tab gridTab;
     private Tab picasoTab;
@@ -83,11 +85,6 @@ public class MainActivity extends Activity {
         fragmentTransaction.replace(R.id.fragment_container, flickrListFragment);
         fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         fragmentTransaction.commit();
-
-
-        //if ok->display list
-
-        //not ok->display Toast (tao khong lay duoc anh)
     }
 
     @Override
@@ -133,8 +130,8 @@ public class MainActivity extends Activity {
 
         @Override
         protected Void doInBackground(Void... params) {
-            FlickrService service = FlickrService.initService("Real");
-            names = service.getAllImageName();
+            FlickrService service = FlickrService.initService(SERVICE_NAME);
+            names = service.getAllImageNames();
 
             return null;
         }

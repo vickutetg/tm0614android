@@ -2,13 +2,15 @@ package vn.techmaster.hoangphan.tourist_app.service;
 
 import java.util.ArrayList;
 
+import vn.techmaster.hoangphan.tourist_app.model.Flickphoto;
+
 /**
  * Created by hoangpt on 1/9/15.
  */
 
 public class StubFlickrService extends FlickrService {
     @Override
-    public ArrayList<String> getAllImageName() {
+    public ArrayList<String> getAllImageNames() {
 
         try {
             Thread.sleep(2000);
@@ -24,5 +26,10 @@ public class StubFlickrService extends FlickrService {
         names.add("anh_so_5.jpg");
 
         return names;
+    }
+
+    @Override
+    public ArrayList<Flickphoto> getAllFlickrPhotos() {
+        return null;
     }
 }
