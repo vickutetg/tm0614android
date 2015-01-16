@@ -2,6 +2,8 @@ package vn.techmaster.hoangphan.tourist_app.service;
 
 import java.util.ArrayList;
 
+import vn.techmaster.hoangphan.tourist_app.model.Flickphoto;
+
 /**
  * Created by hoangpt on 1/9/15.
  */
@@ -16,7 +18,9 @@ public abstract class FlickrService {
 
 
 
-    public abstract ArrayList<String> getAllImageName();
+    public abstract ArrayList<String> getAllImageNames();
+
+    public abstract ArrayList<Flickphoto> getAllFlickrPhotos();
 
     public static FlickrService initService(String name){
         if (name.equals("Stub")){
