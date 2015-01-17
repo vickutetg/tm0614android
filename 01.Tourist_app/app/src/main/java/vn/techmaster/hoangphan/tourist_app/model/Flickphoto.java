@@ -1,5 +1,7 @@
 package vn.techmaster.hoangphan.tourist_app.model;
 
+import android.content.ContentValues;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -62,4 +64,13 @@ public class Flickphoto {
         return photoUri;
     }
 
+    public ContentValues toContent() {
+        ContentValues c = new ContentValues();
+        c.put("id", this.id);
+        c.put("owner", this.owner);
+        c.put("title", this.title);
+
+
+        return c;
+    }
 }

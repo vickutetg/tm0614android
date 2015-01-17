@@ -20,9 +20,8 @@ public class RealFlickrService extends FlickrService {
 
 
     @Override
-    public ArrayList<String> getAllImageNames() {
+    public ArrayList<String> getAllImageNames(ArrayList<Flickphoto> list) {
         //connect internet ->call request api get photos
-        ArrayList<Flickphoto> list = getAllFlickrPhotos();
         ArrayList<String> names = new ArrayList<String>();
 
         for (Flickphoto flickphoto: list){

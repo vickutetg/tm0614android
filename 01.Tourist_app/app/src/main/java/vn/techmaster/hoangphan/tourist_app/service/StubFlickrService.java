@@ -10,7 +10,7 @@ import vn.techmaster.hoangphan.tourist_app.model.Flickphoto;
 
 public class StubFlickrService extends FlickrService {
     @Override
-    public ArrayList<String> getAllImageNames() {
+    public ArrayList<String> getAllImageNames(ArrayList<Flickphoto> photos) {
 
         try {
             Thread.sleep(2000);

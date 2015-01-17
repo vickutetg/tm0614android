@@ -44,4 +44,27 @@ public class NetworkUtils {
 
         return readedLines;
     }
+
+    public static InputStream connectServer(String uriStr) {
+        InputStream is = null;
+
+        try {
+            URL url = new URL(uriStr);
+            HttpURLConnection cnn  =  (HttpURLConnection) url.openConnection();
+            cnn.setRequestMethod("GET");
+            cnn.setAllowUserInteraction(true);
+
+            cnn.connect();
+
+            int status = cnn.getResponseCode();
+
+            if (200 == status) {
+                //read from input stream -->json class
+                is = cnn.getInputStream();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return is;
+    }
 }

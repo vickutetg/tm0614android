@@ -18,7 +18,7 @@ public abstract class FlickrService {
 
 
 
-    public abstract ArrayList<String> getAllImageNames();
+    public abstract ArrayList<String> getAllImageNames(ArrayList<Flickphoto> photos);
 
     public abstract ArrayList<Flickphoto> getAllFlickrPhotos();
 

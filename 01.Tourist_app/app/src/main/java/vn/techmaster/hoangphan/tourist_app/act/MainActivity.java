@@ -4,6 +4,8 @@ import android.app.ActionBar.Tab;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,12 +14,15 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import vn.techmaster.hoangphan.tourist_app.R;
 import vn.techmaster.hoangphan.tourist_app.frag.FlickrGridFragment;
 import vn.techmaster.hoangphan.tourist_app.frag.FlickrListFragment;
+import vn.techmaster.hoangphan.tourist_app.frag.WarningFragment;
+import vn.techmaster.hoangphan.tourist_app.model.Flickphoto;
 import vn.techmaster.hoangphan.tourist_app.service.FlickrService;
 
 /**
@@ -26,15 +31,18 @@ import vn.techmaster.hoangphan.tourist_app.service.FlickrService;
 public class MainActivity extends Activity {
 
     private static final String SERVICE_NAME = "Real";
+    private static final Long FLICKR_OK = 1l;
+    private static final Long FLICKR_FAIL = -1l;
 
     private android.app.ActionBar.Tab listTab;
     private android.app.ActionBar.Tab gridTab;
     private Tab picasoTab;
 
-    private ProgressBar prgCircle;
+    public ProgressBar prgCircle;
     private FlickrListFragment flickrListFragment;
 
     public ArrayList<String> names;
+    public ArrayList<Flickphoto> photos;
 
     /**
      * inner class
@@ -96,10 +104,29 @@ public class MainActivity extends Activity {
         _initUI();
 
         //check internet connect, if not->turn on network, if ok->asyncTask
+        //kiểm tra Internet có ra ngoài được không
+        if(!_checkInternet()){
+            prgCircle.setVisibility(View.INVISIBLE);
+            Toast.makeText(this, "Turn on internet", Toast.LENGTH_LONG).show();
 
+            WarningFragment warningFragment = new WarningFragment();
+            warningFragment.show(getFragmentManager(), "warning");
+        } else {
+            Log.d("Network", "OK");
 
-        //init AsyncTask to load image
-        new LoadFlickImageAsyncTask().execute();
+            //ok ra ngoài, gọi service
+            //init AsyncTask to load image
+            new LoadFlickImageAsyncTask().execute();
+        }
+    }
+
+    public boolean _checkInternet() {
+        //connection manager, kiem tra
+        ConnectivityManager connectService = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectService.getActiveNetworkInfo();
+
+        //return false;
+        return (networkInfo != null && networkInfo.isConnected());
     }
 
     private void _initUI() {
@@ -126,20 +153,27 @@ public class MainActivity extends Activity {
         return true;
     }
 
-    private class LoadFlickImageAsyncTask extends AsyncTask<Void, Long, Void>{
+    private class LoadFlickImageAsyncTask extends AsyncTask<Void, Long, Long>{
 
         @Override
-        protected Void doInBackground(Void... params) {
+        protected Long doInBackground(Void... params) {
             FlickrService service = FlickrService.initService(SERVICE_NAME);
-            names = service.getAllImageNames();
+            photos = service.getAllFlickrPhotos();
+            names = service.getAllImageNames(photos);
 
-            return null;
+            return FLICKR_OK;
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
-            _showListPhoto();
-            prgCircle.setVisibility(View.INVISIBLE);
+        protected void onPostExecute(Long result) {
+            if(result == FLICKR_FAIL){ //error
+                Toast.makeText(getApplicationContext(),
+                        "Something error", Toast.LENGTH_LONG).show();
+            } else {
+                //ok --> return 1l, not ok->0l
+                _showListPhoto();
+                prgCircle.setVisibility(View.INVISIBLE);
+            }
         }
     }
 
